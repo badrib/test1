@@ -38,7 +38,7 @@ Webproxy is a system that passes along the http protocol request to the target u
     <td>DELETE</td><td>/webproxy/cname/*</td><td>HTTP DELETE request is passed to target, identified by cname for URL given after /cname/</td>
   </tr>
   <tr>
-    <td>PUT</td><td>/webproxy/cname/*</td><td>HTTP PUT request is passed to targer, identified by by cname for the URL provided after /cname/</td>
+    <td>PUT</td><td>/webproxy/cname/*</td><td>HTTP PUT request is passed to target, identified by cname for the URL provided after /cname/</td>
   </tr>
 
 </table>
@@ -60,18 +60,17 @@ POST response from the system identified by cname
 --------------
 
     Verb   URI                     Description
-    GET	   /webproxy/cname/*      Lists summary of services configured in VCG identified by service ID.
-
+    GET	   /webproxy/cname/*      HTTP GET request is passed to target, identified by cname for URL given after /cname/
 
 DELETE response from the system identified by cname
 --------------
 
     Verb   URI                     Description
-    DELETE /webproxy/cname/*       Lists summary of services configured in VCG identified by service ID.
+    DELETE /webproxy/cname/*       HTTP DELETE request is passed to target, identified by cname for URL given after /cname/
+
 
 PUT response from the system identified by cname
 --------------
 
     Verb   URI                     Description
-    PUT	   /webproxy/cname/*	Lists summary of services configured in VCG identified by service ID.
-
+    PUT	   /webproxy/cname/*      HTTP PUT request is passed to target, identified by cname for the URL provided after /cname/
