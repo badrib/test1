@@ -53,53 +53,26 @@ In all the above API's the response from target is passed back to the original c
 --------------
 
     Verb   URI                     Description
-    GET	   /webproxy/cname/*	Lists summary of services configured in VCG identified by service ID.
+    GET	   /webproxy/cname/*      Lists summary of services configured in VCG identified by service ID.
 
 
-Note: The request does not require a message body.
-Success: Returns JSON data with list of services installed on VCG. Each service is identified by service ID
 
-The service ID is generated is a UUID.
+POST response from the system identified by cname
+--------------
 
-Service Family is the generic service type while name is the actual service name.
-
-pkgurl: The package download link provided to VCG
-
-api: Supported APIs for this service.
-
-*Note: Currently no validation of the package contents done*
-
-*TODO: Caller to provide md5sum of the package along with pkgurl*
+    Verb   URI                     Description
+    GET	   /webproxy/cname/*      Lists summary of services configured in VCG identified by service ID.
 
 
-**Example Request and Response**
+DELETE response from the system identified by cname
+--------------
 
-*Request*
+    Verb   URI                     Description
+    DELETE /webproxy/cname/*       Lists summary of services configured in VCG identified by service ID.
 
-    GET /services
+PUT response from the system identified by cname
+--------------
 
-*Response*
-
-```
-{
-    "services": 
-    [
-        {
-            "id": "40860f06-7dcf-41ab-a414-98957b092b7b",
-            "status": "installed"
-            "api": "/dhcp",
-			"description": {
-				 "name": "udhcpd",
-            	 "family": "dhcp",
-			     "version": "1.0",
-            	 "pkgurl": "http://my-url.com/udhcpd-0.0.1.deb"
-			}
-        }
-    ]
-}
-```
-
-Create Service
----------------
-
+    Verb   URI                     Description
+    PUT	   /webproxy/cname/*	Lists summary of services configured in VCG identified by service ID.
 
