@@ -10,6 +10,7 @@ Webproxy
 ========
 
 Webproxy is a system that passes along the http protocol request to the target url and returns the response from the target url to the system. In our scenario the cloudflash webproxy module does the passing of http protocol request to the target(CNAME) and the URL is identified by wildcard charachter *(Any URL in CNAME system) at the end point.
+CNAME - is a base64 encoded string that corresponds to a system.
 
 *List of APIs*
 ==============
