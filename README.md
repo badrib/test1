@@ -58,10 +58,8 @@ In all the above API's, the response from target is passed back to the original 
 Request JSON - The JSON Body for the URL in target.
 
 Response JSON - 
-
-    on Error - Error Details.
-
-    on Success - Response JSON from the target.
+ on Error - Error Details.
+ on Success - Response JSON from the target.
               
 
 
