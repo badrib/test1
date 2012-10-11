@@ -15,6 +15,11 @@ Steps to Install
 
 Note: During new service post, deb package uses npm to fetch the published package
 
+Webproxy
+========
+
+Webproxy is a system that passes along the http protocol request to the target url and returns the response from the target url to the system. In our scenario the cloudflash webproxy module does the passing of http protocol request to the target(CNAME) and the URL is identified by wildcard charachter *(Any URL in CNAME system) at the end point.
+
 *List of APIs*
 ==============
 
@@ -23,21 +28,22 @@ Note: During new service post, deb package uses npm to fetch the published packa
     <th>Verb</th><th>URI</th><th>Description</th>
   </tr>
   <tr>
-    <td>GET</td><td>/webproxy/cname/*</td><td>Get the information from the system Identified by cname</td>
+    <td>POST</td><td>/webproxy/cname/*</td><td>HTTP POST request is passed to target, identified by cname for the URL provided after /cname/</td>
   </tr>
   <tr>
-    <td>POST</td><td>/webproxy/cname/*</td><td>Create a new service in VCG</td>
+    <td>GET</td><td>/webproxy/cname/*</td><td>HTTP GET request is passed to target, identified by cname for URL given after /cname/</td>
+  </tr>
+
+  <tr>
+    <td>DELETE</td><td>/webproxy/cname/*</td><td>HTTP DELETE request is passed to target, identified by cname for URL given after /cname/</td>
   </tr>
   <tr>
-    <td>DELETE</td><td>/webproxy/cname/*</td><td>Delete an installed service in VCG by service ID</td>
-  </tr>
-  <tr>
-    <td>PUT</td><td>/webproxy/cname/*</td><td>Put request to the system identified by cname</td>
+    <td>PUT</td><td>/webproxy/cname/*</td><td>HTTP PUT request is passed to targer, identified by by cname for the URL provided after /cname/</td>
   </tr>
 
 </table>
 
-
+In all the above API's the response from target is passed back to the original caller.
 
 
 *Webproxy API*
