@@ -55,6 +55,15 @@ In all the above API's, the response from target is passed back to the original 
     Verb   URI                     Description
     GET	   /webproxy/cname/*      HTTP POST request is passed to target, identified by cname for the URL provided after /cname/
 
+Request JSON - The JSON Body for the URL in target.
+
+Response JSON - 
+
+On Error - Error Details.
+
+on Success - Response from the target.
+              
+
 
 POST response from the system identified by cname
 --------------
