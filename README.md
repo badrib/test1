@@ -43,7 +43,7 @@ Webproxy is a system that passes along the http protocol request to the target u
 
 </table>
 
-In all the above API's the response from target is passed back to the original caller.
+In all the above API's, the response from target is passed back to the original caller.
 
 
 *Webproxy API*
@@ -53,8 +53,7 @@ In all the above API's the response from target is passed back to the original c
 --------------
 
     Verb   URI                     Description
-    GET	   /webproxy/cname/*      Lists summary of services configured in VCG identified by service ID.
-
+    GET	   /webproxy/cname/*      HTTP POST request is passed to target, identified by cname for the URL provided after /cname/
 
 
 POST response from the system identified by cname
