@@ -75,9 +75,9 @@ Request JSON - The JSON Body for the URL in target.
 
 Response JSON - 
 
-    on Error - Error Details.
+ on Error - Error Details.
 
-    on Success - Response JSON from the target.
+ on Success - Response JSON from the target.
               
 
 DELETE response from the system identified by cname
@@ -91,9 +91,9 @@ Request JSON - The JSON Body for the URL in target.
 
 Response JSON - 
 
-    on Error - Error Details.
-
-    on Success - Response JSON from the target.
+ on Error - Error Details.
+ 
+ on Success - Response JSON from the target.
               
 
 
@@ -107,7 +107,7 @@ Request JSON - The JSON Body for the URL in target.
 
 Response JSON - 
 
-    on Error - Error Details.
-
-    on Success - Response JSON from the target.
+ on Error - Error Details.
+ 
+ on Success - Response JSON from the target.
               
