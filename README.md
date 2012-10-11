@@ -59,9 +59,9 @@ Request JSON - The JSON Body for the URL in target.
 
 Response JSON - 
 
-On Error - Error Details.
+    on Error - Error Details.
 
-on Success - Response from the target.
+    on Success - Response JSON from the target.
               
 
 
@@ -71,6 +71,15 @@ POST response from the system identified by cname
     Verb   URI                     Description
     GET	   /webproxy/cname/*      HTTP GET request is passed to target, identified by cname for URL given after /cname/
 
+Request JSON - The JSON Body for the URL in target.
+
+Response JSON - 
+
+    on Error - Error Details.
+
+    on Success - Response JSON from the target.
+              
+
 DELETE response from the system identified by cname
 --------------
 
@@ -78,8 +87,27 @@ DELETE response from the system identified by cname
     DELETE /webproxy/cname/*       HTTP DELETE request is passed to target, identified by cname for URL given after /cname/
 
 
+Request JSON - The JSON Body for the URL in target.
+
+Response JSON - 
+
+    on Error - Error Details.
+
+    on Success - Response JSON from the target.
+              
+
+
 PUT response from the system identified by cname
 --------------
 
     Verb   URI                     Description
     PUT	   /webproxy/cname/*      HTTP PUT request is passed to target, identified by cname for the URL provided after /cname/
+
+Request JSON - The JSON Body for the URL in target.
+
+Response JSON - 
+
+    on Error - Error Details.
+
+    on Success - Response JSON from the target.
+              
